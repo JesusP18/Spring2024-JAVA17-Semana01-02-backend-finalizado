@@ -29,5 +29,9 @@ public class AlumnoServiceImpl implements AlumnoService{
 		return repository.findByNombreLike(nombre);
 	}
 	
+	@Override
+	public List<Alumno> listaAlumnoPorIdAlumno(int id) {
+		return repository.findByIdAlumno(id);
+	}
 
 }
